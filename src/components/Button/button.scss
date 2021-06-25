@@ -1,0 +1,48 @@
+.button {
+    position: relative;
+    border: 2px solid $color-transparent;
+    border-radius: $half-spacing;
+    padding: $half-spacing $base-spacing;
+}
+
+.primary {
+    background-color: $color-primary;
+    border-color: $color-primary;
+    color: $color-primary-contrast;
+}
+
+.secondary {
+    background-color: $color-secondary;
+    border-color: $color-secondary;
+    color: $color-secondary-contrast;
+}
+
+.disabled {
+    opacity: 0.4;
+    &:hover {
+        cursor: not-allowed;
+    }
+}
+
+.inverted {
+    background-color: $color-transparent;
+
+    &.primary {
+        color: $color-primary;
+    }
+
+    &.secondary {
+        color: $color-secondary;
+    }
+}
+
+.icon {
+    margin: 0 0.2rem;
+}
+
+.spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include translate(-50%, -50%);
+}

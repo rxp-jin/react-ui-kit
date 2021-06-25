@@ -1,0 +1,9 @@
+.buttons {
+    display: grid;
+    gap: $half-spacing;
+
+    div {
+        display: flex;
+        gap: $half-spacing;
+    }
+}

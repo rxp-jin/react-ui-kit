@@ -1,0 +1,28 @@
+// Theme Colours
+$color-primary: #f5007e;
+$color-primary-light: lighten($color-primary, 20%);
+$color-primary-dark: darken($color-primary, 20%);
+$color-primary-contrast: #fff;
+$color-secondary: #27153e;
+$color-secondary-light: lighten($color-secondary, 20%);
+$color-secondary-dark: darken($color-secondary, 20%);
+$color-secondary-contrast: #fff;
+$color-body: #000;
+
+// Other Colours
+$color-red: rgb(213, 35, 35);
+$color-white: #fff;
+$color-black: #000;
+$color-transparent: transparent;
+
+// spacing
+$base-spacing: 20px;
+$half-spacing: $base-spacing/2;
+
+// breakpoints
+$mob-start: 374px;
+$palm-start: 420px;
+$lap-start: 768px;
+$desk-start: 990px;
+$wide-start: 1200px;
+$page-width: 1600px;

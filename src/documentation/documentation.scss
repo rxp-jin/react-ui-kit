@@ -1,0 +1,19 @@
+.container {
+    display: block;
+    max-width: 600px;
+    margin: auto;
+
+    h1,
+    h2 {
+        margin-top: $base-spacing;
+    }
+
+    h2 {
+        color: $color-primary;
+    }
+
+    p {
+        margin-top: $half-spacing;
+        color: $color-body;
+    }
+}

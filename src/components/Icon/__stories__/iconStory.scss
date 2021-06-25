@@ -1,0 +1,20 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: auto;
+    gap: $half-spacing;
+}
+
+.iconWrapper {
+    border: 2px solid $color-body;
+    border-radius: $half-spacing;
+    padding: $base-spacing;
+    text-align: center;
+
+    span {
+        display: block;
+        color: $color-body;
+        font-size: $caption;
+        margin-top: $half-spacing;
+    }
+}

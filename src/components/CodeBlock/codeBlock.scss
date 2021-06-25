@@ -1,0 +1,19 @@
+.codeBlock {
+    background: #1f2929;
+    color: #80f86b;
+    border: 2px solid #1f2929;
+    border-radius: $half-spacing;
+    padding: $half-spacing $base-spacing;
+    margin: $base-spacing 0;
+    line-height: $base-line-height * 1.5;
+}
+
+.dark {
+    background: #1f2929;
+    color: #80f86b;
+}
+
+.light {
+    background: rgb(247, 245, 245);
+    color: #1f2929;
+}
