@@ -40,11 +40,11 @@
     position: $pos;
 }
 
-/* EXAMPLE
-div::after {
-  @include pseudo(block, absolute, "");
+@mixin rounded($radius: $half-spacing) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
 }
-*/
 
 // Animation hardware acceleration
 @mixin hardware($backface: true, $perspective: 1000) {
@@ -90,15 +90,6 @@ div::after {
     }
 }
 
-/* EXAMPLE
-input,  
-textarea {  
-    @include input-placeholder {
-        color: $grey;
-    }
-}
-*/
-
 // Transform
 @mixin transform($transforms) {
     -moz-transform: $transforms;
@@ -116,4 +107,17 @@ textarea {
 // Rotate
 @mixin rotate($deg) {
     @include transform(rotate(#{$deg}deg));
+}
+
+// Box shadow
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+    @if $inset {
+        -webkit-box-shadow: inset $top $left $blur $color;
+        -moz-box-shadow: inset $top $left $blur $color;
+        box-shadow: inset $top $left $blur $color;
+    } @else {
+        -webkit-box-shadow: $top $left $blur $color;
+        -moz-box-shadow: $top $left $blur $color;
+        box-shadow: $top $left $blur $color;
+    }
 }

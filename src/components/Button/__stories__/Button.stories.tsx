@@ -17,7 +17,7 @@ stories.add("Default", () => {
             <h1>Button</h1>
             <p>Some information about the button</p>
 
-            <div className={css.buttons}>
+            <div className={css.examples}>
                 <div>
                     <Button onClick={() => alert("Primary button clicked!")}>Primary</Button>
                     <Button inverted>Inverted</Button>
