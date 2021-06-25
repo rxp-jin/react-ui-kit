@@ -1,0 +1,5 @@
+.examples {
+    display: grid;
+    gap: $half-spacing;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
